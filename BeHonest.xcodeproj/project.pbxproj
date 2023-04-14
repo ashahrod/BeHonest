@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9719053B29E9D01E0057DB99 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9719053A29E9D01E0057DB99 /* Location.swift */; };
+		9719054729E9D1150057DB99 /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9719054629E9D1150057DB99 /* LocationsDataService.swift */; };
+		9719054929E9D37B0057DB99 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9719054829E9D37B0057DB99 /* LocationsViewModel.swift */; };
+		9719054B29E9D39B0057DB99 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9719054A29E9D39B0057DB99 /* LocationsView.swift */; };
+		97306E6729BA7D6A00BF1C15 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97306E5A29BA7D6000BF1C15 /* SQLite.framework */; };
+		97306E6829BA7D6A00BF1C15 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 97306E5A29BA7D6000BF1C15 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		974AE94629C95E8600DF5F7E /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974AE94529C95E8600DF5F7E /* MapViewModel.swift */; };
+		974AE94F29C9616000DF5F7E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974AE94E29C9616000DF5F7E /* MapView.swift */; };
+		975ADE4429C7B24500A2002B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975ADE4329C7B24500A2002B /* Post.swift */; };
+		976C4A9529C8F1280073A59F /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976C4A9429C8F1280073A59F /* SplashView.swift */; };
+		97EE101429B6A4AC00F57DA1 /* BeHonestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EE101329B6A4AC00F57DA1 /* BeHonestApp.swift */; };
+		97EE101829B6A4AC00F57DA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97EE101729B6A4AC00F57DA1 /* Assets.xcassets */; };
+		97EE101B29B6A4AC00F57DA1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97EE101A29B6A4AC00F57DA1 /* Preview Assets.xcassets */; };
+		97F66F8729BA7A05008C7B56 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F66F8629BA7A05008C7B56 /* Database.swift */; };
+		97FC233D29B86C3F0057E4FD /* PostForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FC233C29B86C3F0057E4FD /* PostForm.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97306E5929BA7D6000BF1C15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97306E4F29BA7D6000BF1C15 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		97306E5B29BA7D6000BF1C15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97306E4F29BA7D6000BF1C15 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		97306E5D29BA7D6000BF1C15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97306E4F29BA7D6000BF1C15 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		97306E5F29BA7D6000BF1C15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97306E4F29BA7D6000BF1C15 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		97306E6129BA7D6000BF1C15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97306E4F29BA7D6000BF1C15 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		97306E6329BA7D6000BF1C15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97306E4F29BA7D6000BF1C15 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		97306E6529BA7D6000BF1C15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97306E4F29BA7D6000BF1C15 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		97306E6929BA7D6A00BF1C15 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				97306E6829BA7D6A00BF1C15 /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9719053A29E9D01E0057DB99 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		9719054629E9D1150057DB99 /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
+		9719054829E9D37B0057DB99 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
+		9719054A29E9D39B0057DB99 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		97306E4F29BA7D6000BF1C15 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../../SQLite-BeHonest/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		974AE94529C95E8600DF5F7E /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		974AE94E29C9616000DF5F7E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		975ADE4329C7B24500A2002B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		976C4A9429C8F1280073A59F /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		97EE101029B6A4AC00F57DA1 /* BeHonest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeHonest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97EE101329B6A4AC00F57DA1 /* BeHonestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeHonestApp.swift; sourceTree = "<group>"; };
+		97EE101729B6A4AC00F57DA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97EE101A29B6A4AC00F57DA1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		97F66F8629BA7A05008C7B56 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		97FC233C29B86C3F0057E4FD /* PostForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostForm.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97EE100D29B6A4AC00F57DA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97306E6729BA7D6A00BF1C15 /* SQLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9719054329E9D02A0057DB99 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				974AE94529C95E8600DF5F7E /* MapViewModel.swift */,
+				9719054829E9D37B0057DB99 /* LocationsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9719054429E9D03F0057DB99 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9719053A29E9D01E0057DB99 /* Location.swift */,
+				975ADE4329C7B24500A2002B /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9719054529E9D0BB0057DB99 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9719054629E9D1150057DB99 /* LocationsDataService.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		97306E5029BA7D6000BF1C15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97306E5A29BA7D6000BF1C15 /* SQLite.framework */,
+				97306E5C29BA7D6000BF1C15 /* SQLiteTests iOS.xctest */,
+				97306E5E29BA7D6000BF1C15 /* SQLite.framework */,
+				97306E6029BA7D6000BF1C15 /* SQLiteTests Mac.xctest */,
+				97306E6229BA7D6000BF1C15 /* SQLite.framework */,
+				97306E6429BA7D6000BF1C15 /* SQLiteTests tvOS.xctest */,
+				97306E6629BA7D6000BF1C15 /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		976C4A8C29C8F0EB0073A59F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				974AE94E29C9616000DF5F7E /* MapView.swift */,
+				97FC233C29B86C3F0057E4FD /* PostForm.swift */,
+				976C4A9429C8F1280073A59F /* SplashView.swift */,
+				9719054A29E9D39B0057DB99 /* LocationsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		97EE100729B6A4AC00F57DA1 = {
+			isa = PBXGroup;
+			children = (
+				97EE101229B6A4AC00F57DA1 /* BeHonest */,
+				97EE101129B6A4AC00F57DA1 /* Products */,
+				97F66FB829BA7AAF008C7B56 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		97EE101129B6A4AC00F57DA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97EE101029B6A4AC00F57DA1 /* BeHonest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97EE101229B6A4AC00F57DA1 /* BeHonest */ = {
+			isa = PBXGroup;
+			children = (
+				9719054529E9D0BB0057DB99 /* Data */,
+				9719054429E9D03F0057DB99 /* Models */,
+				9719054329E9D02A0057DB99 /* ViewModels */,
+				976C4A8C29C8F0EB0073A59F /* Views */,
+				97EE101329B6A4AC00F57DA1 /* BeHonestApp.swift */,
+				97F66F8629BA7A05008C7B56 /* Database.swift */,
+				97306E4F29BA7D6000BF1C15 /* SQLite.xcodeproj */,
+				97EE101729B6A4AC00F57DA1 /* Assets.xcassets */,
+				97EE101929B6A4AC00F57DA1 /* Preview Content */,
+			);
+			path = BeHonest;
+			sourceTree = "<group>";
+		};
+		97EE101929B6A4AC00F57DA1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				97EE101A29B6A4AC00F57DA1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		97F66FB829BA7AAF008C7B56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97EE100F29B6A4AC00F57DA1 /* BeHonest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97EE101E29B6A4AC00F57DA1 /* Build configuration list for PBXNativeTarget "BeHonest" */;
+			buildPhases = (
+				97EE100C29B6A4AC00F57DA1 /* Sources */,
+				97EE100D29B6A4AC00F57DA1 /* Frameworks */,
+				97EE100E29B6A4AC00F57DA1 /* Resources */,
+				97306E6929BA7D6A00BF1C15 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeHonest;
+			productName = BeHonest;
+			productReference = 97EE101029B6A4AC00F57DA1 /* BeHonest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97EE100829B6A4AC00F57DA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					97EE100F29B6A4AC00F57DA1 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 97EE100B29B6A4AC00F57DA1 /* Build configuration list for PBXProject "BeHonest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97EE100729B6A4AC00F57DA1;
+			productRefGroup = 97EE101129B6A4AC00F57DA1 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 97306E5029BA7D6000BF1C15 /* Products */;
+					ProjectRef = 97306E4F29BA7D6000BF1C15 /* SQLite.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				97EE100F29B6A4AC00F57DA1 /* BeHonest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		97306E5A29BA7D6000BF1C15 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 97306E5929BA7D6000BF1C15 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		97306E5C29BA7D6000BF1C15 /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = 97306E5B29BA7D6000BF1C15 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		97306E5E29BA7D6000BF1C15 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 97306E5D29BA7D6000BF1C15 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		97306E6029BA7D6000BF1C15 /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = 97306E5F29BA7D6000BF1C15 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		97306E6229BA7D6000BF1C15 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 97306E6129BA7D6000BF1C15 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		97306E6429BA7D6000BF1C15 /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = 97306E6329BA7D6000BF1C15 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		97306E6629BA7D6000BF1C15 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 97306E6529BA7D6000BF1C15 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97EE100E29B6A4AC00F57DA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97EE101B29B6A4AC00F57DA1 /* Preview Assets.xcassets in Resources */,
+				97EE101829B6A4AC00F57DA1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97EE100C29B6A4AC00F57DA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97FC233D29B86C3F0057E4FD /* PostForm.swift in Sources */,
+				974AE94F29C9616000DF5F7E /* MapView.swift in Sources */,
+				97F66F8729BA7A05008C7B56 /* Database.swift in Sources */,
+				9719054729E9D1150057DB99 /* LocationsDataService.swift in Sources */,
+				9719053B29E9D01E0057DB99 /* Location.swift in Sources */,
+				97EE101429B6A4AC00F57DA1 /* BeHonestApp.swift in Sources */,
+				9719054929E9D37B0057DB99 /* LocationsViewModel.swift in Sources */,
+				974AE94629C95E8600DF5F7E /* MapViewModel.swift in Sources */,
+				9719054B29E9D39B0057DB99 /* LocationsView.swift in Sources */,
+				975ADE4429C7B24500A2002B /* Post.swift in Sources */,
+				976C4A9529C8F1280073A59F /* SplashView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		97EE101C29B6A4AC00F57DA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		97EE101D29B6A4AC00F57DA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97EE101F29B6A4AC00F57DA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BeHonest/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to determine pin radius.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashahrod.BeHonest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		97EE102029B6A4AC00F57DA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BeHonest/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to determine pin radius.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashahrod.BeHonest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97EE100B29B6A4AC00F57DA1 /* Build configuration list for PBXProject "BeHonest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97EE101C29B6A4AC00F57DA1 /* Debug */,
+				97EE101D29B6A4AC00F57DA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97EE101E29B6A4AC00F57DA1 /* Build configuration list for PBXNativeTarget "BeHonest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97EE101F29B6A4AC00F57DA1 /* Debug */,
+				97EE102029B6A4AC00F57DA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97EE100829B6A4AC00F57DA1 /* Project object */;
+}
