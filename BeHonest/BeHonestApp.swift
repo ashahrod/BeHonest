@@ -16,7 +16,9 @@ struct BeHonestApp: App {
     var body: some Scene {
         WindowGroup {
 //            SplashView().environmentObject(mapModel)
-            MapView().environmentObject(mapModel)
+            MapView().environmentObject(mapModel).environmentObject(vm)
+            
+//            LocationsListView().environmentObject(vm)
         }
     }
 }

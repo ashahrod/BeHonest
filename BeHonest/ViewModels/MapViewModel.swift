@@ -10,12 +10,17 @@ import MapKit
 
 enum MapDetails {
     static let startingLocation = CLLocationCoordinate2DMake(37.331516, -121.891054)
-    static let defaultSpan = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+    static let defaultSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
 }
 
 final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate{
-//    var region = MKCoordinateRegion(center: MapDetails.startingLocation, span: MapDetails.defaultSpan)
+    
+    //Current region on map
     @Published var region = MKCoordinateRegion(center: MapDetails.startingLocation, span: MapDetails.defaultSpan)
+    
+    //All loaded locations
+    @Published var locations = [LocationsDataService.locations]
+
 
     var locationManager: CLLocationManager?
 
@@ -60,5 +65,10 @@ final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate{
             break
         }
     }
+    
+//    // created this to be called in LocationsViewModel
+//    func updateMapRegion(coordinates: MKCoordinateRegion){
+//        region = coordinates
+//    }
 
 }

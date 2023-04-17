@@ -11,6 +11,7 @@
 		9719054729E9D1150057DB99 /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9719054629E9D1150057DB99 /* LocationsDataService.swift */; };
 		9719054929E9D37B0057DB99 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9719054829E9D37B0057DB99 /* LocationsViewModel.swift */; };
 		9719054B29E9D39B0057DB99 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9719054A29E9D39B0057DB99 /* LocationsView.swift */; };
+		9719054D29ECB6660057DB99 /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9719054C29ECB6660057DB99 /* LocationsListView.swift */; };
 		97306E6729BA7D6A00BF1C15 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97306E5A29BA7D6000BF1C15 /* SQLite.framework */; };
 		97306E6829BA7D6A00BF1C15 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 97306E5A29BA7D6000BF1C15 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		974AE94629C95E8600DF5F7E /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974AE94529C95E8600DF5F7E /* MapViewModel.swift */; };
@@ -95,6 +96,7 @@
 		9719054629E9D1150057DB99 /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
 		9719054829E9D37B0057DB99 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		9719054A29E9D39B0057DB99 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		9719054C29ECB6660057DB99 /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
 		97306E4F29BA7D6000BF1C15 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../../SQLite-BeHonest/SQLite.xcodeproj"; sourceTree = "<group>"; };
 		974AE94529C95E8600DF5F7E /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		974AE94E29C9616000DF5F7E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				97FC233C29B86C3F0057E4FD /* PostForm.swift */,
 				976C4A9429C8F1280073A59F /* SplashView.swift */,
 				9719054A29E9D39B0057DB99 /* LocationsView.swift */,
+				9719054C29ECB6660057DB99 /* LocationsListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				9719054929E9D37B0057DB99 /* LocationsViewModel.swift in Sources */,
 				974AE94629C95E8600DF5F7E /* MapViewModel.swift in Sources */,
 				9719054B29E9D39B0057DB99 /* LocationsView.swift in Sources */,
+				9719054D29ECB6660057DB99 /* LocationsListView.swift in Sources */,
 				975ADE4429C7B24500A2002B /* Post.swift in Sources */,
 				976C4A9529C8F1280073A59F /* SplashView.swift in Sources */,
 			);

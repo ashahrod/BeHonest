@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+//WILL NOT BE USED
+// NOT NEEDED, WILL USE MapView Instead
+//class LocationsViewModel: ObservableObject
+
 struct LocationsView: View {
     
     @EnvironmentObject private var vm: LocationsViewModel
