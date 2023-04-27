@@ -10,7 +10,7 @@ import MapKit
 
 enum MapDetails {
     static let startingLocation = CLLocationCoordinate2DMake(37.331516, -121.891054)
-    static let defaultSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+    static let defaultSpan = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
 }
 
 final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate{

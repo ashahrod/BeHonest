@@ -12,6 +12,36 @@ class LocationsDataService {
     
     static let locations: [Location] = [
         Location(
+            name: "Union Square",
+            cityName: "San Francisco",
+            coordinates: CLLocationCoordinate2D(latitude: 37.78841, longitude: -122.40778),
+            description: "Union Square",
+            imageNames: [
+                "union-square"
+            ],
+            link: "https://en.wikipedia.org/wiki/Louvre"),
+        
+        Location(
+            name: "Times Square",
+            cityName: "New York City",
+            coordinates: CLLocationCoordinate2D(latitude: 40.75822, longitude: -73.9862),
+            description: "Times Square",
+            imageNames: [
+                "times-square"
+            ],
+            link: "https://en.wikipedia.org/wiki/Louvre"),
+        
+        Location(
+            name: "Central London",
+            cityName: "London",
+            coordinates: CLLocationCoordinate2D(latitude: 51.50755, longitude: -0.12778),
+            description: "Central London",
+            imageNames: [
+                "london"
+            ],
+            link: "https://en.wikipedia.org/wiki/Louvre"),
+        
+        Location(
             name: "Colosseum",
             cityName: "Rome",
             coordinates: CLLocationCoordinate2D(latitude: 41.8902, longitude: 12.4922),
@@ -65,6 +95,7 @@ class LocationsDataService {
                 "paris-louvre-3",
             ],
             link: "https://en.wikipedia.org/wiki/Louvre"),
+
     ]
     
 }

@@ -9,13 +9,18 @@ import MapKit
 import SwiftUI
 
 struct MapView: View {
-    //    @StateObject private var mapModel = MapViewModel()
     @EnvironmentObject private var mapModel: MapViewModel
     @EnvironmentObject private var vm: LocationsViewModel
     
     var body: some View {
         ZStack{
-            Map(coordinateRegion: $mapModel.region, showsUserLocation: true)
+//            Map(coordinateRegion: $mapModel.region, showsUserLocation: true)
+            Map(coordinateRegion: $mapModel.region, showsUserLocation: true, annotationItems: vm.locations,
+                annotationContent: {location in
+                MapAnnotation(coordinate: location.coordinates, content: {
+                    LocationMapAnnotationView()
+                })
+            })
                 .ignoresSafeArea()
                 .accentColor(Color(.systemPink))
                 .onAppear{
@@ -45,7 +50,11 @@ extension MapView{
         // code for locations list top bar and its button
         VStack{
             Button(action: vm.toggleLocationsList) {
-                Text("BeHonest").font(.title2).fontWeight(.black).foregroundColor(.primary).frame(height: 35).frame(maxWidth: .infinity)
+                Text("BeHonest").font(.title2)
+                    .fontWeight(.black)
+                    .foregroundColor(.primary)
+                    .frame(height: 40)
+                    .frame(maxWidth: .infinity)
                     .overlay(alignment: .leading){
                         Image(systemName: "arrow.down")
                             .font(.headline)
