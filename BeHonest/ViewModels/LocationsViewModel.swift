@@ -28,7 +28,7 @@ class LocationsViewModel: ObservableObject{
         }
     }
     
-    func showNextLocation(mv: MapViewModel, location: Location){
+    func goToLocation(mv: MapViewModel, location: Location){
         withAnimation(.easeInOut){
             mv.region = MKCoordinateRegion(center: location.coordinates, span: MapDetails.defaultSpan)
             showLocationsList = false

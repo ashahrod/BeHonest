@@ -25,6 +25,7 @@ func createPostsTable() {
         print("Table already created.")
     }
 //    let posts = Table("posts")
+    
 //    try! db.run(posts.drop())
 
 //    try! db.run(posts.insert(name <- "AP"))

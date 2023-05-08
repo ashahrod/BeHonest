@@ -72,3 +72,9 @@ final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate{
 //    }
 
 }
+
+struct Previews_MapViewModel_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+    }
+}

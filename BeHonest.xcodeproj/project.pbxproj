@@ -19,11 +19,14 @@
 		975ADE4429C7B24500A2002B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975ADE4329C7B24500A2002B /* Post.swift */; };
 		976C4A9529C8F1280073A59F /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976C4A9429C8F1280073A59F /* SplashView.swift */; };
 		97863EEE29FA362A00D4DF59 /* LocationMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97863EED29FA362A00D4DF59 /* LocationMapAnnotationView.swift */; };
+		97AF046C29FE1E0C005EDFEC /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AF046B29FE1E0C005EDFEC /* FormViewModel.swift */; };
+		97AF046E29FE29E5005EDFEC /* NewFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AF046D29FE29E5005EDFEC /* NewFormView.swift */; };
+		97AF047329FE2DC1005EDFEC /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AF047229FE2DC1005EDFEC /* TextArea.swift */; };
 		97EE101429B6A4AC00F57DA1 /* BeHonestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EE101329B6A4AC00F57DA1 /* BeHonestApp.swift */; };
 		97EE101829B6A4AC00F57DA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97EE101729B6A4AC00F57DA1 /* Assets.xcassets */; };
 		97EE101B29B6A4AC00F57DA1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97EE101A29B6A4AC00F57DA1 /* Preview Assets.xcassets */; };
 		97F66F8729BA7A05008C7B56 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F66F8629BA7A05008C7B56 /* Database.swift */; };
-		97FC233D29B86C3F0057E4FD /* PostForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FC233C29B86C3F0057E4FD /* PostForm.swift */; };
+		97FC233D29B86C3F0057E4FD /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FC233C29B86C3F0057E4FD /* FormView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,12 +107,15 @@
 		975ADE4329C7B24500A2002B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		976C4A9429C8F1280073A59F /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		97863EED29FA362A00D4DF59 /* LocationMapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapAnnotationView.swift; sourceTree = "<group>"; };
+		97AF046B29FE1E0C005EDFEC /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
+		97AF046D29FE29E5005EDFEC /* NewFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFormView.swift; sourceTree = "<group>"; };
+		97AF047229FE2DC1005EDFEC /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
 		97EE101029B6A4AC00F57DA1 /* BeHonest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeHonest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97EE101329B6A4AC00F57DA1 /* BeHonestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeHonestApp.swift; sourceTree = "<group>"; };
 		97EE101729B6A4AC00F57DA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97EE101A29B6A4AC00F57DA1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		97F66F8629BA7A05008C7B56 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
-		97FC233C29B86C3F0057E4FD /* PostForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostForm.swift; sourceTree = "<group>"; };
+		97FC233C29B86C3F0057E4FD /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +135,7 @@
 			children = (
 				974AE94529C95E8600DF5F7E /* MapViewModel.swift */,
 				9719054829E9D37B0057DB99 /* LocationsViewModel.swift */,
+				97AF046B29FE1E0C005EDFEC /* FormViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -168,13 +175,22 @@
 			isa = PBXGroup;
 			children = (
 				974AE94E29C9616000DF5F7E /* MapView.swift */,
-				97FC233C29B86C3F0057E4FD /* PostForm.swift */,
+				97FC233C29B86C3F0057E4FD /* FormView.swift */,
+				97AF046D29FE29E5005EDFEC /* NewFormView.swift */,
 				976C4A9429C8F1280073A59F /* SplashView.swift */,
 				9719054A29E9D39B0057DB99 /* LocationsView.swift */,
 				9719054C29ECB6660057DB99 /* LocationsListView.swift */,
 				97863EED29FA362A00D4DF59 /* LocationMapAnnotationView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		97AF047129FE2DB0005EDFEC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				97AF047229FE2DC1005EDFEC /* TextArea.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		97EE100729B6A4AC00F57DA1 = {
@@ -197,6 +213,7 @@
 		97EE101229B6A4AC00F57DA1 /* BeHonest */ = {
 			isa = PBXGroup;
 			children = (
+				97AF047129FE2DB0005EDFEC /* Components */,
 				9719054529E9D0BB0057DB99 /* Data */,
 				9719054429E9D03F0057DB99 /* Models */,
 				9719054329E9D02A0057DB99 /* ViewModels */,
@@ -354,12 +371,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97FC233D29B86C3F0057E4FD /* PostForm.swift in Sources */,
+				97FC233D29B86C3F0057E4FD /* FormView.swift in Sources */,
 				974AE94F29C9616000DF5F7E /* MapView.swift in Sources */,
 				97F66F8729BA7A05008C7B56 /* Database.swift in Sources */,
 				9719054729E9D1150057DB99 /* LocationsDataService.swift in Sources */,
+				97AF046C29FE1E0C005EDFEC /* FormViewModel.swift in Sources */,
 				9719053B29E9D01E0057DB99 /* Location.swift in Sources */,
 				97EE101429B6A4AC00F57DA1 /* BeHonestApp.swift in Sources */,
+				97AF047329FE2DC1005EDFEC /* TextArea.swift in Sources */,
+				97AF046E29FE29E5005EDFEC /* NewFormView.swift in Sources */,
 				9719054929E9D37B0057DB99 /* LocationsViewModel.swift in Sources */,
 				97863EEE29FA362A00D4DF59 /* LocationMapAnnotationView.swift in Sources */,
 				974AE94629C95E8600DF5F7E /* MapViewModel.swift in Sources */,

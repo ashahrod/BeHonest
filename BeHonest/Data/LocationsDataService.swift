@@ -14,7 +14,7 @@ class LocationsDataService {
         Location(
             name: "Union Square",
             cityName: "San Francisco",
-            coordinates: CLLocationCoordinate2D(latitude: 37.78841, longitude: -122.40778),
+            coordinates: CLLocationCoordinate2D(latitude: 37.788512107128156, longitude: -122.40741451650712),
             description: "Union Square",
             imageNames: [
                 "union-square"
@@ -24,7 +24,7 @@ class LocationsDataService {
         Location(
             name: "Times Square",
             cityName: "New York City",
-            coordinates: CLLocationCoordinate2D(latitude: 40.75822, longitude: -73.9862),
+            coordinates: CLLocationCoordinate2D(latitude: 40.75823014850874, longitude: -73.98622766823745),
             description: "Times Square",
             imageNames: [
                 "times-square"
@@ -34,7 +34,7 @@ class LocationsDataService {
         Location(
             name: "Central London",
             cityName: "London",
-            coordinates: CLLocationCoordinate2D(latitude: 51.50755, longitude: -0.12778),
+            coordinates: CLLocationCoordinate2D(latitude: 51.50746684416889, longitude: -0.1277582993783859),
             description: "Central London",
             imageNames: [
                 "london"

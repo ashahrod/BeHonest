@@ -1,7 +1,7 @@
 import Foundation
 import SwiftUI
 
-struct formView: View {
+struct FormView: View {
     @State private var postTitle = ""
     @State private var description = ""
     @State private var privatePost = false
@@ -44,5 +44,12 @@ struct formView: View {
 extension View{
     func hideKeyboard(){
         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+
+
+struct FormView_Previews: PreviewProvider {
+    static var previews: some View {
+        FormView()
     }
 }

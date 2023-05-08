@@ -15,7 +15,7 @@ struct LocationsListView: View {
         List{
             ForEach(vm.locations){ location in
                 Button{
-                    vm.showNextLocation(mv: mapModel, location: location)
+                    vm.goToLocation(mv: mapModel, location: location)
                 } label:{
                     listRowView(location: location)
                 }
