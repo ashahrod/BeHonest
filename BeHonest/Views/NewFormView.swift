@@ -6,14 +6,28 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct NewFormView: View {
     @State private var caption = ""
+    @State private var coordinates: CLLocationCoordinate2D
     
     @State private var privatePost = false
     @State private var anonymous = false
+    
+    //had to add this due to passing in CLLocationCoordinate2D from MapView
+    // this is to have the users location for the new pin
+    init(coordinates: CLLocationCoordinate2D) {
+        _coordinates = State(initialValue: coordinates)
+    }
+    
+    //if not passed in, just use default Starting Location
+    //for TESTING purposes
+    init() {
+        _coordinates = State(initialValue: MapDetails.startingLocation)
+    }
+    
 
-    // get rid of this ppresetnation mode, its not working
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
         VStack{
@@ -29,7 +43,8 @@ struct NewFormView: View {
                 Spacer()
                 
                 Button {
-                    print("Tweet")
+                    saveUser()
+                    presentationMode.wrappedValue.dismiss()
                 } label: {
                     Text("Submit")
                         .bold()
@@ -48,6 +63,12 @@ struct NewFormView: View {
                 TextArea("What's popping", text: $caption)
             }
             .padding()
+            
+//            VStack {
+//                Text(String(coordinates.longitude) + " a " + String(coordinates.latitude))
+//            }
+//            .padding()
+            
             VStack(alignment: .center){
                 Section(header: Text("Actions").bold()){
                     Toggle("Private Post (friends only)", isOn: $privatePost)
@@ -58,10 +79,20 @@ struct NewFormView: View {
                 .offset(y: -50)
         }
     }
+    func saveUser(){
+        print("User Saved")
+        createPostsTable()
+        print("lat, long:" + String(coordinates.latitude) + "  " + String(coordinates.longitude))
+        insertPost(dbcaption: caption, dblongitude: String(coordinates.longitude), dblatitude: String(coordinates.latitude))
+        printAllUsers()
+        
+    }
 }
+
+
 
 struct NewFormView_Previews: PreviewProvider {
     static var previews: some View {
-        NewFormView()
+        NewFormView(coordinates: CLLocationCoordinate2D(latitude: 0, longitude: 0))
     }
 }

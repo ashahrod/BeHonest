@@ -21,7 +21,10 @@ class FormViewModel: ObservableObject {
             print("Button Toggled")
             showForm.toggle()
         }
-//        showForm.toggle()
+    }
+    
+    func parseDatabasePost(){
+        
     }
 
     

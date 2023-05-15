@@ -10,15 +10,18 @@ import SwiftUI
 
 struct MapView: View {
     @EnvironmentObject private var mapModel: MapViewModel
-    @EnvironmentObject private var vm: LocationsViewModel
+    @EnvironmentObject private var lvm: LocationsViewModel
     @EnvironmentObject private var fm: FormViewModel
+    @EnvironmentObject private var pvm: PostViewModel
+    
     
     var body: some View {
         ZStack{
-            Map(coordinateRegion: $mapModel.region, showsUserLocation: true, annotationItems: vm.locations,
-                annotationContent: {location in
-                MapAnnotation(coordinate: location.coordinates, content: {
-                    LocationMapAnnotationView()
+            
+            Map(coordinateRegion: $mapModel.region, showsUserLocation: true, annotationItems: pvm.posts,
+                annotationContent: {post in
+                MapAnnotation(coordinate: post.coordinates, content: {
+                    LocationMapAnnotationView(caption: post.caption)
                 })
             })
             .ignoresSafeArea()
@@ -29,43 +32,64 @@ struct MapView: View {
                 mapModel.checkIfLocationServicesIsEnabled()
                 
             }
+            //                        Map(coordinateRegion: $mapModel.region, showsUserLocation: true, annotationItems: lvm.locations,
+            //                            annotationContent: {location in
+            //                            MapAnnotation(coordinate: location.coordinates, content: {
+            //                                LocationMapAnnotationView(caption: "Hello")
+            //                            })
+            //                        })
+            
+            Button(action: {
+                if let userLocation = mapModel.getUserLocation() {
+                    let region = MKCoordinateRegion(center: userLocation, span: MapDetails.defaultSpan)
+                    mapModel.updateMapRegion(coordinates: region)
+                }
+            }) {
+                Image(systemName: "location.fill")
+                    .resizable()
+                    .frame(width: 35, height: 35)
+                    .foregroundColor(.primary)
+            }
+            .background(Color(.white))
+            .cornerRadius(12)
+            .padding(16)
+            .position(x: 350, y: 700)
+            
+            
+            
             VStack(spacing: 0){
                 header.padding()
                 Spacer()
-
+                
             }
             Button(action: fm.toggleForm)  {
                 Image(systemName: "signpost.right.and.left.circle")
                     .resizable()
                     .renderingMode(.template)
                     .frame(width: 60, height: 60)
-//                    .padding()
+                //                    .padding()
             }
             .background(Color(.clear))
-//                .offset(x: 140, y: 330)
+            //                .offset(x: 140, y: 330)
             .offset(x: 140 , y: -280)
-                .foregroundColor(Color(.black))
-                .padding()
-                .fullScreenCover(isPresented: $fm.showForm) {
-                    NewFormView()
-                }
+            .foregroundColor(Color(.black))
+            .padding()
+            .fullScreenCover(isPresented: $fm.showForm)
+            {
+                NewFormView(coordinates: mapModel.locationManager!.location!.coordinate)
+            }
         }
     }
 }
 
 
-struct MapView_Previews: PreviewProvider {
-    static var previews: some View {
-        MapView().environmentObject(MapViewModel()).environmentObject(LocationsViewModel()).environmentObject(FormViewModel())
-    }
-}
 
 extension MapView{
     
     private var header: some View{
         // code for locations list top bar and its button
         VStack{
-            Button(action: vm.toggleLocationsList) {
+            Button(action: lvm.toggleLocationsList) {
                 Text("BeHonest").font(.title2)
                     .fontWeight(.black)
                     .foregroundColor(.primary)
@@ -76,51 +100,26 @@ extension MapView{
                             .font(.headline)
                             .foregroundColor(.primary)
                             .padding()
-                            .rotationEffect(Angle(degrees: vm.showLocationsList ? 180 : 0))
+                            .rotationEffect(Angle(degrees: lvm.showLocationsList ? 180 : 0))
                         // toggle arrow direction on showLocationsList
                     }
             }
-            if vm.showLocationsList{
-                LocationsListView().environmentObject(vm).environmentObject(mapModel)
+            if lvm.showLocationsList{
+                LocationsListView().environmentObject(lvm).environmentObject(mapModel)
             }
         }
-
+        
         .background(.thickMaterial)
         .cornerRadius(10)
         .shadow(color: Color.black.opacity(0.3), radius: 20, x:0, y:15)
         
     }
     
-    private var form: some View{
-        VStack{
-            Button(action: fm.toggleForm) {
-                Text("Create a Post!").font(.title2)
-                    .fontWeight(.black)
-                    .foregroundColor(.primary)
-                    .frame(height: 40)
-                    .frame(maxWidth: .infinity)
-                    .overlay(alignment: .leading){
-                        Image(systemName: "arrow.down")
-                            .font(.headline)
-                            .foregroundColor(.primary)
-                            .padding()
-                            .rotationEffect(Angle(degrees: fm.showForm ? 0 : 180))
-                        // toggle arrow direction on showLocationsList
-                    }
-            }
-            .background(.thickMaterial)
-            .cornerRadius(10)
-            .shadow(color: Color.black.opacity(0.3), radius: 20, x:0, y:15)
-//            if fm.showForm{
-//                NewFormView()
-//            }
-        }
-        
-        .background(.thickMaterial)
-        .cornerRadius(10)
-//        .shadow(color: Color.black.opacity(0.3), radius: 20, x:0, y:15)
-//        .shadow(color: Color.white, radius: 20, x:0, y:15)
-    }
-    
 }
 
+struct MapView_Previews: PreviewProvider {
+    static var previews: some View {
+        MapView().environmentObject(MapViewModel()).environmentObject(LocationsViewModel()).environmentObject(FormViewModel())
+        //            .environmentObject(PostViewModel())
+    }
+}

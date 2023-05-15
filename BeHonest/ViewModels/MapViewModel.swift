@@ -67,9 +67,13 @@ final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate{
     }
     
 //    // created this to be called in LocationsViewModel
-//    func updateMapRegion(coordinates: MKCoordinateRegion){
-//        region = coordinates
-//    }
+    func updateMapRegion(coordinates: MKCoordinateRegion){
+        region = coordinates
+    }
+    
+    func getUserLocation() -> CLLocationCoordinate2D?{
+        return locationManager?.location?.coordinate
+    }
 
 }
 

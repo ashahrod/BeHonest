@@ -8,25 +8,23 @@
 import Foundation
 import MapKit
 
-var incrementID = 1;
 
-struct Post{
+struct Post: Identifiable{
 //    represent the pin location
 //    let id = UUID().uuidString
     let id: Int
-    let longitude: Float
-    let latitude: Float
-    let title: String
-    let coordinates: CLLocationCoordinate2D
+    let caption: String
+    let longitude: Double
+    let latitude: Double
+    var coordinates: CLLocationCoordinate2D{
+        return CLLocationCoordinate2D(latitude: CLLocationDegrees(latitude), longitude: CLLocationDegrees(longitude))
+    }
     
-    init(longitude: Float, latitude: Float, title: String, coordinates: CLLocationCoordinate2D) {
-        self.id = incrementID
+    init(id: Int, caption: String, longitude: Double, latitude: Double) {
+        self.id = id
         self.longitude = longitude
         self.latitude = latitude
-        self.title = title
-        self.coordinates = coordinates
-        
-        incrementID += 1
+        self.caption = caption
     }
     /*
      we need the Post's: emoji for pin,

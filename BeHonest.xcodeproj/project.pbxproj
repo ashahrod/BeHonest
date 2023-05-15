@@ -12,6 +12,7 @@
 		9719054929E9D37B0057DB99 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9719054829E9D37B0057DB99 /* LocationsViewModel.swift */; };
 		9719054B29E9D39B0057DB99 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9719054A29E9D39B0057DB99 /* LocationsView.swift */; };
 		9719054D29ECB6660057DB99 /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9719054C29ECB6660057DB99 /* LocationsListView.swift */; };
+		971ED52B2A11B23E00EC2B49 /* popUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971ED52A2A11B23D00EC2B49 /* popUpView.swift */; };
 		97306E6729BA7D6A00BF1C15 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97306E5A29BA7D6000BF1C15 /* SQLite.framework */; };
 		97306E6829BA7D6A00BF1C15 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 97306E5A29BA7D6000BF1C15 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		974AE94629C95E8600DF5F7E /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974AE94529C95E8600DF5F7E /* MapViewModel.swift */; };
@@ -22,9 +23,11 @@
 		97AF046C29FE1E0C005EDFEC /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AF046B29FE1E0C005EDFEC /* FormViewModel.swift */; };
 		97AF046E29FE29E5005EDFEC /* NewFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AF046D29FE29E5005EDFEC /* NewFormView.swift */; };
 		97AF047329FE2DC1005EDFEC /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AF047229FE2DC1005EDFEC /* TextArea.swift */; };
+		97E639012A09677700A3628F /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E639002A09677700A3628F /* PostViewModel.swift */; };
 		97EE101429B6A4AC00F57DA1 /* BeHonestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EE101329B6A4AC00F57DA1 /* BeHonestApp.swift */; };
 		97EE101829B6A4AC00F57DA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97EE101729B6A4AC00F57DA1 /* Assets.xcassets */; };
 		97EE101B29B6A4AC00F57DA1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97EE101A29B6A4AC00F57DA1 /* Preview Assets.xcassets */; };
+		97EE97362A08B494008F6E5F /* d2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EE97352A08B494008F6E5F /* d2.swift */; };
 		97F66F8729BA7A05008C7B56 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F66F8629BA7A05008C7B56 /* Database.swift */; };
 		97FC233D29B86C3F0057E4FD /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FC233C29B86C3F0057E4FD /* FormView.swift */; };
 /* End PBXBuildFile section */
@@ -101,6 +104,7 @@
 		9719054829E9D37B0057DB99 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		9719054A29E9D39B0057DB99 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 		9719054C29ECB6660057DB99 /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
+		971ED52A2A11B23D00EC2B49 /* popUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popUpView.swift; sourceTree = "<group>"; };
 		97306E4F29BA7D6000BF1C15 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../../SQLite-BeHonest/SQLite.xcodeproj"; sourceTree = "<group>"; };
 		974AE94529C95E8600DF5F7E /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		974AE94E29C9616000DF5F7E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -110,10 +114,12 @@
 		97AF046B29FE1E0C005EDFEC /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
 		97AF046D29FE29E5005EDFEC /* NewFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFormView.swift; sourceTree = "<group>"; };
 		97AF047229FE2DC1005EDFEC /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
+		97E639002A09677700A3628F /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		97EE101029B6A4AC00F57DA1 /* BeHonest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeHonest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97EE101329B6A4AC00F57DA1 /* BeHonestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeHonestApp.swift; sourceTree = "<group>"; };
 		97EE101729B6A4AC00F57DA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97EE101A29B6A4AC00F57DA1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		97EE97352A08B494008F6E5F /* d2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = d2.swift; sourceTree = "<group>"; };
 		97F66F8629BA7A05008C7B56 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		97FC233C29B86C3F0057E4FD /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +142,7 @@
 				974AE94529C95E8600DF5F7E /* MapViewModel.swift */,
 				9719054829E9D37B0057DB99 /* LocationsViewModel.swift */,
 				97AF046B29FE1E0C005EDFEC /* FormViewModel.swift */,
+				97E639002A09677700A3628F /* PostViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -181,6 +188,7 @@
 				9719054A29E9D39B0057DB99 /* LocationsView.swift */,
 				9719054C29ECB6660057DB99 /* LocationsListView.swift */,
 				97863EED29FA362A00D4DF59 /* LocationMapAnnotationView.swift */,
+				971ED52A2A11B23D00EC2B49 /* popUpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,6 +228,7 @@
 				976C4A8C29C8F0EB0073A59F /* Views */,
 				97EE101329B6A4AC00F57DA1 /* BeHonestApp.swift */,
 				97F66F8629BA7A05008C7B56 /* Database.swift */,
+				97EE97352A08B494008F6E5F /* d2.swift */,
 				97306E4F29BA7D6000BF1C15 /* SQLite.xcodeproj */,
 				97EE101729B6A4AC00F57DA1 /* Assets.xcassets */,
 				97EE101929B6A4AC00F57DA1 /* Preview Content */,
@@ -377,13 +386,16 @@
 				9719054729E9D1150057DB99 /* LocationsDataService.swift in Sources */,
 				97AF046C29FE1E0C005EDFEC /* FormViewModel.swift in Sources */,
 				9719053B29E9D01E0057DB99 /* Location.swift in Sources */,
+				97E639012A09677700A3628F /* PostViewModel.swift in Sources */,
 				97EE101429B6A4AC00F57DA1 /* BeHonestApp.swift in Sources */,
 				97AF047329FE2DC1005EDFEC /* TextArea.swift in Sources */,
 				97AF046E29FE29E5005EDFEC /* NewFormView.swift in Sources */,
 				9719054929E9D37B0057DB99 /* LocationsViewModel.swift in Sources */,
+				971ED52B2A11B23E00EC2B49 /* popUpView.swift in Sources */,
 				97863EEE29FA362A00D4DF59 /* LocationMapAnnotationView.swift in Sources */,
 				974AE94629C95E8600DF5F7E /* MapViewModel.swift in Sources */,
 				9719054B29E9D39B0057DB99 /* LocationsView.swift in Sources */,
+				97EE97362A08B494008F6E5F /* d2.swift in Sources */,
 				9719054D29ECB6660057DB99 /* LocationsListView.swift in Sources */,
 				975ADE4429C7B24500A2002B /* Post.swift in Sources */,
 				976C4A9529C8F1280073A59F /* SplashView.swift in Sources */,

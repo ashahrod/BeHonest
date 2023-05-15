@@ -13,11 +13,12 @@ struct BeHonestApp: App {
     @StateObject private var mapModel = MapViewModel()
     @StateObject private var vm = LocationsViewModel()
     @StateObject private var fv = FormViewModel()
+    @StateObject private var pvm = PostViewModel()
 
     var body: some Scene {
         WindowGroup {
 //            SplashView().environmentObject(mapModel)
-            MapView().environmentObject(mapModel).environmentObject(vm).environmentObject(fv)
+            MapView().environmentObject(mapModel).environmentObject(vm).environmentObject(fv).environmentObject(pvm)
             
 //            LocationsListView().environmentObject(vm)
         }
